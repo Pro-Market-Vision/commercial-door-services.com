@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://commercial-door-services.com/sitemap-index.xml
