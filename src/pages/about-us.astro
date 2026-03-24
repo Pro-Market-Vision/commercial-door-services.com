@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Us | Commercial Door Services">
+  <section class="relative bg-primary text-white py-20 md:py-24">
+    <div class="relative max-w-7xl mx-auto px-4 text-center">
+      <h1 class="font-heading text-5xl md:text-7xl tracking-wide mb-4">About Us</h1>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="font-heading text-4xl tracking-wide text-primary mb-4">Learn About Us</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Commercial Door Services is your premier provider of top-notch commercial door solutions. With years of experience, we specialize in installation, repair, and maintenance of commercial doors.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Our key service areas include automatic door systems, fire-rated doors, and high-speed doors. Customer satisfaction is at the heart of our business. We pride ourselves on our fast response times, professional service, and competitive pricing.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          Services include quick repairs, complete door replacements, and routine maintenance.
+        </p>
+      </div>
+      <div>
+        <img src="/images/services/installation.webp" alt="Commercial Door Installation" class="rounded-lg shadow-lg w-full" />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-light">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-heading text-4xl md:text-5xl tracking-wide text-primary mb-4">From Our Lovely Clients</h2>
+      <p class="text-gray-600">We provide top-tier commercial door services backed by client reviews, covering installation through repair services.</p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <div>
+        <h2 class="font-heading text-4xl md:text-5xl tracking-wide text-primary mb-4">Get Your Free Estimate!</h2>
+        <p class="text-gray-600 leading-relaxed">Upgrade your business with top-notch commercial door services. From installation to maintenance, our expert team ensures your doors are secure and efficient.</p>
+      </div>
+      <form class="space-y-4 bg-gray-light p-8 rounded-lg" action="#" method="POST">
+        <input type="text" name="name" placeholder="Name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent" />
+        <input type="tel" name="phone" placeholder="Phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent" />
+        <input type="email" name="email" placeholder="Email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent" />
+        <textarea name="message" placeholder="Message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent resize-vertical"></textarea>
+        <button type="submit" class="w-full bg-accent text-white font-heading text-xl tracking-wide py-4 rounded-lg hover:bg-blue-800 transition-colors">SEND</button>
+      </form>
+    </div>
+  </section>
+</Layout>
