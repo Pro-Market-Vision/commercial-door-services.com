@@ -1,0 +1,97 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Commercial Door Repair | Orlando & Miami FL"
+  description="Expert commercial door repair in Orlando & Miami. Security, fire-rated & automatic doors. 24/7 emergency service. Call (954) 727-5435 for a free estimate."
+>
+  <section class="relative bg-primary text-white py-20 md:py-28 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/services/repair.webp')" role="img" aria-label="Commercial door repair service"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/70"></div>
+    <div class="relative max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl">
+        <h1 class="font-heading text-5xl md:text-6xl tracking-wide mb-4">Commercial Door Repair</h1>
+        <p class="text-xl text-gray-200 mb-8">Ensure the safety, security, and efficiency of your business premises with our specialized commercial door repair services.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="tel:9547275435" class="bg-white text-primary font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-gray-100 transition-colors text-center">(954) 727-5435</a>
+          <a href="/contact" class="border-2 border-white text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-white hover:text-primary transition-colors text-center">FREE ESTIMATE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="font-heading text-4xl tracking-wide text-primary mb-4">Professional Commercial Door Repair Services</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">Commercial door repair is essential for maintaining the smooth operation of your business. Faulty doors can lead to security risks, energy loss, and disruptions to your daily operations.</p>
+        <p class="text-gray-600 leading-relaxed mb-4">Our team provides comprehensive repair services for all types of commercial doors, including security doors, fire-rated doors, automatic doors, and more. We understand the importance of minimal disruption to your business operations, which is why we offer flexible scheduling and efficient service.</p>
+        <p class="text-gray-600 leading-relaxed">In addition to repairs, we provide routine maintenance services to prevent future issues and extend the lifespan of your doors.</p>
+        <h3 class="font-heading text-2xl tracking-wide text-primary mt-6 mb-3">Common Repair Services</h3>
+        <ul class="list-disc pl-6 text-gray-600 space-y-2">
+          <li>Hinge repair and replacement</li>
+          <li>Lock repair and replacement</li>
+          <li>Roller and track repair</li>
+          <li>Door alignment and adjustment</li>
+          <li>Frame repair</li>
+        </ul>
+      </div>
+      <div>
+        <img src="/images/services/repair.webp" alt="Commercial door repair service in Orlando and Miami" class="rounded-lg shadow-lg w-full" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-light">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="font-heading text-4xl text-center tracking-wide text-primary mb-10">Why Choose Us</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+        {[
+          { name: "Fast & Reliable", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
+          { name: "Transparent Pricing", icon: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
+          { name: "Emergency 24/7", icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" },
+          { name: "Expert Technicians", icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" },
+        ].map((f) => (
+          <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+            <div class="w-14 h-14 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={f.icon} /></svg>
+            </div>
+            <h3 class="font-heading text-lg tracking-wide text-primary">{f.name}</h3>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="font-heading text-4xl text-center tracking-wide text-primary mb-10">Our Other Commercial Door Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          { name: "Roller Replacement & Frame Repair", href: "/service/roller-replacement-and-frame-repair" },
+          { name: "Lock Repair", href: "/service/lock-repair" },
+          { name: "Hinge Repair/Replacement", href: "/service/hinge-repair-replacement" },
+          { name: "Commercial Door Installation", href: "/service/commercial-door-installation" },
+          { name: "Commercial Door Lock Services", href: "/service/commercial-door-lock-services" },
+        ].map((s) => (
+          <a href={s.href} class="block p-6 bg-gray-light rounded-lg hover:shadow-md transition-shadow text-center">
+            <h3 class="font-heading text-xl tracking-wide text-primary">{s.name}</h3>
+            <p class="text-accent mt-2 text-sm">Learn More →</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-primary text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-heading text-4xl tracking-wide mb-4">Get Your Free Estimate!</h2>
+      <p class="text-gray-300 leading-relaxed mb-8">Contact us today for expert commercial door repair in Orlando and Miami.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:9547275435" class="bg-accent text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-blue-800 transition-colors">Call Now (954) 727-5435</a>
+        <a href="/contact" class="border-2 border-white text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-white hover:text-primary transition-colors">FREE ESTIMATE</a>
+      </div>
+    </div>
+  </section>
+</Layout>

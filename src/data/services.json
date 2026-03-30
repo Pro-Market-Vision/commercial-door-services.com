@@ -1,31 +1,37 @@
 [
   {
     "name": "Roller Replacement And Frame Repair",
+    "slug": "roller-replacement-and-frame-repair",
     "description": "Expert commercial door services offering reliable roller replacement and frame repair to ensure smooth operation and durability.",
     "image": "/images/services/roller-replacement.webp"
   },
   {
     "name": "Lock Repair",
+    "slug": "lock-repair",
     "description": "Top-notch commercial door services specializing in efficient lock repair to enhance security and functionality for your business.",
     "image": "/images/services/lock-repair.webp"
   },
   {
     "name": "Hinge Repair/Replacement",
+    "slug": "hinge-repair-replacement",
     "description": "Reliable commercial door services specializing in hinge repair and replacement to ensure smooth and secure door operation.",
     "image": "/images/services/hinge-repair.webp"
   },
   {
     "name": "Commercial Door Installation",
+    "slug": "commercial-door-installation",
     "description": "Professional commercial door services specializing in expert commercial door installation for enhanced security.",
     "image": "/images/services/installation.webp"
   },
   {
     "name": "Commercial Door Repair",
+    "slug": "commercial-door-repair",
     "description": "Reliable commercial door services offering expert commercial door repair to ensure your business doors are secure.",
     "image": "/images/services/repair.webp"
   },
   {
     "name": "Commercial Door Lock Services",
+    "slug": "commercial-door-lock-services",
     "description": "Expert commercial door services providing comprehensive commercial door lock services to enhance the security of your business.",
     "image": "/images/services/lock-services.webp"
   }

@@ -1,0 +1,70 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import services from '../../data/services.json';
+---
+
+<Layout
+  title="Commercial Door Services Miami | 24/7 Repair & Install"
+  description="Expert commercial door services in Miami, FL. Installation, repair & maintenance for automatic, security & fire-rated doors. Call (954) 727-5435."
+>
+  <section class="relative bg-primary text-white py-20 md:py-28 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/services/hero.webp')" role="img" aria-label="Commercial door services in Miami"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/70"></div>
+    <div class="relative max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl">
+        <h1 class="font-heading text-5xl md:text-6xl tracking-wide mb-4">Commercial Door Services Miami</h1>
+        <p class="text-xl text-gray-200 mb-8">Trusted commercial door installation, repair, and maintenance for businesses throughout Miami, FL. Expert solutions with 24/7 emergency availability.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="tel:9547275435" class="bg-white text-primary font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-gray-100 transition-colors text-center">(954) 727-5435</a>
+          <a href="/contact" class="border-2 border-white text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-white hover:text-primary transition-colors text-center">FREE ESTIMATE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="font-heading text-4xl tracking-wide text-primary mb-4">Expert Solutions for Your Business in Miami</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">We specialize in providing comprehensive commercial door solutions for businesses throughout Miami. From installation of steel, glass, and aluminum doors to expert repair and ongoing maintenance, our team ensures your business entrances remain secure and functional.</p>
+        <p class="text-gray-600 leading-relaxed mb-4">Our Miami team offers high-security lock solutions, keyless entry systems, and access control systems to keep your commercial property protected around the clock.</p>
+        <p class="text-gray-600 leading-relaxed">With 24/7 emergency service availability, you can count on us whenever you need urgent commercial door repairs in Miami.</p>
+      </div>
+      <div>
+        <img src="/images/services/hero.webp" alt="Commercial door services in Miami, FL" class="rounded-lg shadow-lg w-full" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-light">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="font-heading text-4xl text-center tracking-wide text-primary mb-10">Our Services in Miami</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          { name: "Roller Replacement & Frame Repair", href: "/service/roller-replacement-and-frame-repair" },
+          { name: "Lock Repair", href: "/service/lock-repair" },
+          { name: "Hinge Repair/Replacement", href: "/service/hinge-repair-replacement" },
+          { name: "Commercial Door Installation", href: "/service/commercial-door-installation" },
+          { name: "Commercial Door Repair", href: "/service/commercial-door-repair" },
+          { name: "Commercial Door Lock Services", href: "/service/commercial-door-lock-services" },
+        ].map((s) => (
+          <a href={s.href} class="group block bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-border/30 p-6 text-center">
+            <h3 class="font-heading text-2xl tracking-wide text-primary mb-2">{s.name}</h3>
+            <p class="text-accent text-sm">Learn More →</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-primary text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-heading text-4xl tracking-wide mb-4">24/7 Emergency Commercial Door Services in Miami</h2>
+      <p class="text-gray-300 leading-relaxed mb-8">Our expert team is available around the clock to handle urgent repairs and maintenance, delivering fast and reliable service for businesses in Miami.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:9547275435" class="bg-accent text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-blue-800 transition-colors">Call Now (954) 727-5435</a>
+        <a href="/contact" class="border-2 border-white text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-white hover:text-primary transition-colors">FREE ESTIMATE</a>
+      </div>
+    </div>
+  </section>
+</Layout>
