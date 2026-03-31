@@ -37,7 +37,37 @@ const locationLinks = [
 
     <nav class="hidden lg:flex items-center gap-8" aria-label="Main navigation">
       {navItems.map((item) => (
-        <a href={item.href} class="font-heading text-lg tracking-wide text-primary hover:text-accent py-2">{item.name.toUpperCase()}</a>
+        item.name === "Services" ? (
+          <div class="relative group">
+            <a href={item.href} class="font-heading text-lg tracking-wide text-primary hover:text-accent py-2 inline-flex items-center gap-1">
+              {item.name.toUpperCase()}
+              <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </a>
+            <div class="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-2 min-w-[280px]">
+                {serviceLinks.map((link) => (
+                  <a href={link.href} class="block px-5 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-accent transition-colors">{link.name}</a>
+                ))}
+              </div>
+            </div>
+          </div>
+        ) : item.name === "Locations" ? (
+          <div class="relative group">
+            <a href={item.href} class="font-heading text-lg tracking-wide text-primary hover:text-accent py-2 inline-flex items-center gap-1">
+              {item.name.toUpperCase()}
+              <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </a>
+            <div class="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-2 min-w-[200px]">
+                {locationLinks.map((link) => (
+                  <a href={link.href} class="block px-5 py-2.5 text-sm text-gray-700 hover:bg-primary/5 hover:text-accent transition-colors">{link.name}</a>
+                ))}
+              </div>
+            </div>
+          </div>
+        ) : (
+          <a href={item.href} class="font-heading text-lg tracking-wide text-primary hover:text-accent py-2">{item.name.toUpperCase()}</a>
+        )
       ))}
     </nav>
 
@@ -51,7 +81,33 @@ const locationLinks = [
   <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100">
     <div class="px-4 py-4 space-y-3">
       {navItems.map((item) => (
-        <a href={item.href} class="block font-heading text-lg tracking-wide text-primary py-2">{item.name.toUpperCase()}</a>
+        item.name === "Services" ? (
+          <div>
+            <button class="mobile-dropdown-btn w-full flex items-center justify-between font-heading text-lg tracking-wide text-primary py-2" data-target="mobile-services">
+              {item.name.toUpperCase()}
+              <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </button>
+            <div id="mobile-services" class="hidden pl-4 space-y-1 pb-2">
+              {serviceLinks.map((link) => (
+                <a href={link.href} class="block text-sm text-gray-600 hover:text-accent py-1.5">{link.name}</a>
+              ))}
+            </div>
+          </div>
+        ) : item.name === "Locations" ? (
+          <div>
+            <button class="mobile-dropdown-btn w-full flex items-center justify-between font-heading text-lg tracking-wide text-primary py-2" data-target="mobile-locations">
+              {item.name.toUpperCase()}
+              <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </button>
+            <div id="mobile-locations" class="hidden pl-4 space-y-1 pb-2">
+              {locationLinks.map((link) => (
+                <a href={link.href} class="block text-sm text-gray-600 hover:text-accent py-1.5">{link.name}</a>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <a href={item.href} class="block font-heading text-lg tracking-wide text-primary py-2">{item.name.toUpperCase()}</a>
+        )
       ))}
       <a href="tel:9547275435" class="block bg-accent text-white font-heading text-lg tracking-wide px-6 py-3 rounded text-center mt-4">CALL NOW</a>
     </div>
@@ -61,5 +117,15 @@ const locationLinks = [
 <script>
   document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
     document.getElementById('mobile-menu')?.classList.toggle('hidden');
+  });
+
+  document.querySelectorAll('.mobile-dropdown-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      const target = document.getElementById(targetId!);
+      const arrow = btn.querySelector('svg');
+      target?.classList.toggle('hidden');
+      arrow?.classList.toggle('rotate-180');
+    });
   });
 </script>
