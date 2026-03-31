@@ -90,7 +90,10 @@ import services from '../data/services.json';
         <p class="text-gray-600 leading-relaxed mb-6">
           We provide comprehensive solutions for <a href="/contact" class="text-accent hover:underline">installation, maintenance, and repair</a> of automatic doors, security doors, and fire-rated doors, with emphasis on security enhancement and customized solutions for businesses in Orlando and Miami.
         </p>
-        <a href="/about-us" class="inline-flex bg-primary text-white font-heading text-lg tracking-wide px-6 py-3 rounded hover:bg-dark transition-colors">LEARN MORE ABOUT US</a>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="/about-us" class="inline-flex bg-primary text-white font-heading text-lg tracking-wide px-6 py-3 rounded hover:bg-dark transition-colors">LEARN MORE ABOUT US</a>
+          <a href="/blog" class="inline-flex border-2 border-primary text-primary font-heading text-lg tracking-wide px-6 py-3 rounded hover:bg-primary hover:text-white transition-colors">READ OUR BLOG</a>
+        </div>
       </div>
       <div>
         <img src="/images/services/hero.webp" alt="Professional commercial door installation service in Orlando" class="rounded-lg shadow-lg w-full" loading="lazy" />
@@ -196,6 +199,77 @@ import services from '../data/services.json';
       { "@type": "Review", "author": { "@type": "Person", "name": "Marcus P." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Commercial Door Services installed new automatic doors for our retail store. Fast, professional, and the doors work perfectly. Highly recommend!" },
       { "@type": "Review", "author": { "@type": "Person", "name": "Diana S." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Called for an emergency lock repair on our office building. They arrived within the hour and had everything fixed. Excellent 24/7 service." },
       { "@type": "Review", "author": { "@type": "Person", "name": "Tom H." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Great experience with their fire-rated door installation. The team was knowledgeable, pricing was transparent, and the work was top quality." }
+    ]
+  })} />
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-heading text-4xl md:text-5xl text-center tracking-wide text-primary mb-10">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        {[
+          {
+            q: "How much does commercial door repair cost?",
+            a: "The cost of commercial door repair varies depending on the type of door, extent of damage, and parts required. Minor repairs such as hinge adjustments or weatherstripping may start around $150, while more extensive repairs involving motors or frames can range higher. Contact us at (954) 727-5435 for a free, no-obligation estimate tailored to your specific needs."
+          },
+          {
+            q: "Do you offer 24/7 emergency commercial door service?",
+            a: "Yes, we provide 24/7 emergency commercial door services across Orlando and Miami. Whether your door is stuck, a lock is broken, or there is a security concern, our technicians are available around the clock to respond quickly and get your business back on track."
+          },
+          {
+            q: "What types of commercial doors do you service?",
+            a: "We service a wide range of commercial doors including automatic sliding doors, security doors, fire-rated doors, steel doors, aluminum storefront doors, glass doors, and rolling steel shutters. Our technicians are trained to handle installation, repair, and maintenance for all major commercial door types."
+          },
+          {
+            q: "How often should commercial doors be inspected?",
+            a: "We recommend having your commercial doors professionally inspected at least twice a year. Regular inspections help identify wear and tear early, prevent costly emergency repairs, and ensure compliance with fire and safety codes. High-traffic doors may benefit from quarterly inspections."
+          },
+          {
+            q: "Do you serve both Orlando and Miami?",
+            a: "Yes, Commercial Door Services proudly serves both Orlando and Miami, as well as surrounding areas throughout Central and South Florida. Our teams are based locally in each region to ensure fast response times for both scheduled appointments and emergency calls."
+          }
+        ].map((faq) => (
+          <details class="group bg-gray-light rounded-lg">
+            <summary class="flex items-center justify-between cursor-pointer p-6 font-heading text-lg tracking-wide text-primary">
+              {faq.q}
+              <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600 leading-relaxed">{faq.a}</div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does commercial door repair cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The cost of commercial door repair varies depending on the type of door, extent of damage, and parts required. Minor repairs such as hinge adjustments or weatherstripping may start around $150, while more extensive repairs involving motors or frames can range higher. Contact us at (954) 727-5435 for a free, no-obligation estimate tailored to your specific needs." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer 24/7 emergency commercial door service?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide 24/7 emergency commercial door services across Orlando and Miami. Whether your door is stuck, a lock is broken, or there is a security concern, our technicians are available around the clock to respond quickly and get your business back on track." }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of commercial doors do you service?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We service a wide range of commercial doors including automatic sliding doors, security doors, fire-rated doors, steel doors, aluminum storefront doors, glass doors, and rolling steel shutters. Our technicians are trained to handle installation, repair, and maintenance for all major commercial door types." }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should commercial doors be inspected?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We recommend having your commercial doors professionally inspected at least twice a year. Regular inspections help identify wear and tear early, prevent costly emergency repairs, and ensure compliance with fire and safety codes. High-traffic doors may benefit from quarterly inspections." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you serve both Orlando and Miami?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, Commercial Door Services proudly serves both Orlando and Miami, as well as surrounding areas throughout Central and South Florida. Our teams are based locally in each region to ensure fast response times for both scheduled appointments and emergency calls." }
+      }
     ]
   })} />
 

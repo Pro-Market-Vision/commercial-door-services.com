@@ -1,0 +1,71 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const posts = [
+  {
+    title: "Commercial Door Maintenance: A Complete Guide for Business Owners",
+    slug: "commercial-door-maintenance-guide",
+    excerpt: "Learn essential commercial door maintenance tips to extend the lifespan of your doors, reduce repair costs, and keep your business secure year-round.",
+    date: "2026-03-15"
+  },
+  {
+    title: "Types of Commercial Doors: Choosing the Right One for Your Business",
+    slug: "types-of-commercial-doors",
+    excerpt: "Explore the different types of commercial doors available and find out which option best suits your business needs, budget, and security requirements.",
+    date: "2026-03-10"
+  },
+  {
+    title: "Commercial Door Repair vs Replacement: Which Is Right for You?",
+    slug: "commercial-door-repair-vs-replacement",
+    excerpt: "Not sure whether to repair or replace your commercial door? This guide breaks down the key factors to help you make the most cost-effective decision.",
+    date: "2026-03-05"
+  }
+];
+---
+
+<Layout
+  title="Commercial Door Services Blog | Tips, Guides & Industry Insights"
+  description="Read expert articles on commercial door installation, repair, maintenance, and more. Tips and guides for business owners in Orlando and Miami, FL."
+  keywords="commercial door blog, commercial door tips, door maintenance guide, commercial door repair guide, Orlando, Miami"
+>
+  <section class="relative bg-primary text-white py-20 md:py-28 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/70"></div>
+    <div class="relative max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl">
+        <h1 class="font-heading text-5xl md:text-6xl tracking-wide mb-4">Commercial Door Services Blog</h1>
+        <p class="text-xl text-gray-200">Expert tips, guides, and industry insights for business owners.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="space-y-8">
+        {posts.map((post) => (
+          <article class="bg-gray-light rounded-lg p-8 hover:shadow-md transition-shadow">
+            <p class="text-sm text-gray-400 mb-2">{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+            <h2 class="font-heading text-2xl md:text-3xl tracking-wide text-primary mb-3">
+              <a href={`/blog/${post.slug}`} class="hover:text-accent transition-colors">{post.title}</a>
+            </h2>
+            <p class="text-gray-600 leading-relaxed mb-4">{post.excerpt}</p>
+            <a href={`/blog/${post.slug}`} class="inline-flex items-center gap-1 text-accent font-heading text-sm tracking-wide hover:gap-2 transition-all duration-300">
+              READ MORE
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            </a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-primary text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-heading text-4xl tracking-wide mb-4">Need Commercial Door Services?</h2>
+      <p class="text-gray-300 leading-relaxed mb-8">From installation to repair, our expert team is ready to help businesses in Orlando and Miami.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:9547275435" class="bg-accent text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-blue-800 transition-colors">Call Now (954) 727-5435</a>
+        <a href="/contact" class="border-2 border-white text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-white hover:text-primary transition-colors">FREE ESTIMATE</a>
+      </div>
+    </div>
+  </section>
+</Layout>
