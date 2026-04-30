@@ -1,0 +1,202 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Commercial Door Services Denver, CO | 24/7 Repair & Install"
+  description="Commercial door installation, repair, and 24/7 emergency service in Denver, CO. Storefront, automatic, fire-rated, and high-security doors for LoDo, RiNo, DTC, Cherry Creek & beyond. Call (954) 727-5435."
+  keywords="commercial door services Denver, commercial door repair Denver CO, commercial door installation Denver, storefront door repair Denver, automatic door repair Denver, fire-rated doors Denver, commercial locksmith Denver, 24/7 commercial door Denver, warehouse door repair Denver, LoDo commercial door, RiNo commercial door, Denver Tech Center commercial door, Cherry Creek commercial door"
+>
+  <section class="relative bg-primary text-white py-20 md:py-28 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/services/hero.webp')" role="img" aria-label="Commercial door services in Denver Colorado"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/70"></div>
+    <div class="relative max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl">
+        <nav aria-label="Breadcrumb" class="text-sm text-gray-300 mb-3">
+          <a href="/" class="hover:text-white">Home</a> <span aria-hidden="true">›</span> <span class="text-white">Denver, CO</span>
+        </nav>
+        <h1 class="font-heading text-5xl md:text-6xl tracking-wide mb-4">Commercial Door Services in Denver, CO</h1>
+        <p class="text-xl text-gray-200 mb-8">Storefront, automatic, fire-rated, and high-security door installation, repair, and maintenance for businesses across LoDo, RiNo, the Denver Tech Center, Cherry Creek, and the entire Mile High City. 24/7 emergency response.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="tel:9547275435" class="bg-white text-primary font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-gray-100 transition-colors text-center">(954) 727-5435</a>
+          <a href="/contact" class="border-2 border-white text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-white hover:text-primary transition-colors text-center">FREE ESTIMATE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="font-heading text-4xl tracking-wide text-primary mb-4">Commercial Door Specialists Serving the Mile High City</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">Denver businesses face a punishing climate. High-altitude UV bleaches finishes, sub-zero winter mornings stiffen weatherstrip, summer hailstorms dent panels, and dry chinook winds slam unsecured doors against jambs hard enough to warp frames. Standard residential-grade hardware doesn't survive a single Front Range season — and the cost of a failed entry door at a Cherry Creek retail boutique or a Denver Tech Center office tower goes well beyond the door itself.</p>
+        <p class="text-gray-600 leading-relaxed mb-4">Our Denver crews specialize in commercial-grade <a href="/service/commercial-door-installation" class="text-accent hover:underline">door installation</a>, emergency <a href="/service/commercial-door-repair" class="text-accent hover:underline">door repair</a>, and preventive maintenance built for Colorado conditions. We work with hollow metal, aluminum storefronts, automatic sliders and swingers, fire-rated assemblies, rolling steel service doors, and high-security entries — for retailers along the 16th Street Mall, restaurants in RiNo and LoDo, medical offices near Anschutz, warehouses around DIA and the Stapleton/Central Park industrial corridor, and office tenants throughout Downtown.</p>
+        <p class="text-gray-600 leading-relaxed">When a panic device fails on a Friday night in Larimer Square, when a hailstorm shreds an aluminum storefront on Colfax, or when a high-cycle automatic sliding door at a Cherry Creek Shopping Center anchor dies during peak traffic — we respond. 24/7. Locally dispatched. Stocked for the most common commercial hardware brands the day we arrive.</p>
+      </div>
+      <div>
+        <img src="/images/services/hero.webp" alt="Commercial door installation and repair team serving Denver, Colorado" class="rounded-lg shadow-lg w-full" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-light">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="font-heading text-4xl text-center tracking-wide text-primary mb-3">Commercial Door Services We Provide in Denver</h2>
+      <p class="text-center text-gray-600 max-w-3xl mx-auto mb-10">From a stuck back-of-house service door at a Five Points restaurant to a full storefront retrofit on Broadway, we handle the full lifecycle of commercial entry hardware.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          { name: "Commercial Door Installation", href: "/service/commercial-door-installation", desc: "New construction and replacement: hollow metal, aluminum storefront, automatic, and fire-rated assemblies." },
+          { name: "Commercial Door Repair", href: "/service/commercial-door-repair", desc: "Sagging doors, broken closers, damaged frames, hail-dented panels, failed weatherstrip — fixed fast." },
+          { name: "Commercial Door Lock Services", href: "/service/commercial-door-lock-services", desc: "Mortise locks, exit devices, electric strikes, master key systems, access control integration." },
+          { name: "Lock Repair", href: "/service/lock-repair", desc: "Sticking cylinders, broken keys, jammed panic bars — rapid response for Denver businesses." },
+          { name: "Hinge Repair & Replacement", href: "/service/hinge-repair-replacement", desc: "Continuous hinges, ball-bearing butts, pivot sets — reset for proper alignment and load." },
+          { name: "Roller Replacement & Frame Repair", href: "/service/roller-replacement-and-frame-repair", desc: "Sliding-door rollers, tracks, and bent frames straightened or replaced." },
+        ].map((s) => (
+          <a href={s.href} class="group block bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-border/30 p-6">
+            <h3 class="font-heading text-2xl tracking-wide text-primary mb-2">{s.name}</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-3">{s.desc}</p>
+            <p class="text-accent text-sm font-heading tracking-wide">Learn More →</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="font-heading text-4xl text-center tracking-wide text-primary mb-3">Industries We Serve in Denver</h2>
+      <p class="text-center text-gray-600 max-w-3xl mx-auto mb-10">Different businesses, different door problems. Here is how we tailor commercial door services to Denver's largest commercial sectors.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-light p-6 rounded-lg">
+          <h3 class="font-heading text-2xl text-primary mb-2">Retail & Storefront</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">High-traffic aluminum storefront and automatic sliding doors at Cherry Creek Shopping Center, the 16th Street Mall, Stanley Marketplace, and along South Broadway take 1,000+ cycles per day. We install and service heavy-duty closers, replace dragging bottom rails, and rebuild storefront thresholds without closing the shop.</p>
+        </div>
+        <div class="bg-gray-light p-6 rounded-lg">
+          <h3 class="font-heading text-2xl text-primary mb-2">Restaurants & Hospitality</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Restaurants in LoDo, RiNo, and Larimer Square need code-compliant exit devices, reliable back-of-house service doors, and walk-in cooler hardware that survives constant temperature swings. We service hotels along 17th Street, the Convention Center corridor, and DIA-area properties.</p>
+        </div>
+        <div class="bg-gray-light p-6 rounded-lg">
+          <h3 class="font-heading text-2xl text-primary mb-2">Medical & Healthcare</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Medical offices in Cherry Creek North, the Anschutz Medical Campus area, and along Colorado Boulevard require ADA-compliant automatic operators, hands-free actuation, and fire-rated stairwell assemblies. We handle annual fire-door inspections and hardware retrofits.</p>
+        </div>
+        <div class="bg-gray-light p-6 rounded-lg">
+          <h3 class="font-heading text-2xl text-primary mb-2">Warehouse & Industrial</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Distribution centers near Denver International Airport, the Pecos/I-70 industrial corridor, and Globeville rely on rolling steel service doors, high-cycle hollow metal entries, and dock-area pedestrian doors. We replace impact-damaged frames and rebuild fork-truck-hit jambs.</p>
+        </div>
+        <div class="bg-gray-light p-6 rounded-lg">
+          <h3 class="font-heading text-2xl text-primary mb-2">Office Towers & Mixed-Use</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Class-A office tenants in the Denver Tech Center, Downtown along 17th Street, and Union Station-area properties need reliable revolving doors, stairwell fire-doors, tenant-suite cylinders, and master key system management.</p>
+        </div>
+        <div class="bg-gray-light p-6 rounded-lg">
+          <h3 class="font-heading text-2xl text-primary mb-2">Schools, Public & Government</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Charter schools, libraries, and municipal buildings throughout Denver Public Schools' service area need lockdown-ready hardware, classroom function locks, and door closers tuned for code-required closing speed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-light">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="font-heading text-4xl text-center tracking-wide text-primary mb-3">Denver Neighborhoods & Service Areas We Cover</h2>
+      <p class="text-center text-gray-600 max-w-3xl mx-auto mb-10">Local crews dispatched across the Denver metro. If you are inside the I-25/I-70/I-225/C-470 envelope, we are likely already on a job near you today.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+        {[
+          "Downtown Denver","LoDo (Lower Downtown)","RiNo (River North)","Capitol Hill","Cherry Creek","Cherry Creek North","Highlands","Sloan's Lake","Berkeley","Sunnyside","Five Points","Baker","Wash Park (Washington Park)","Park Hill","Hilltop","Lowry","Stapleton / Central Park","Cole","Globeville","Elyria-Swansea","Montbello","Green Valley Ranch","DIA Corridor","Denver Tech Center (DTC)","Glendale","University Hills","Platt Park","Virginia Village","Mar Lee","Westwood","Athmar Park","Valverde"
+        ].map((area) => (
+          <span class="bg-white text-gray-700 text-sm px-4 py-2 rounded border border-gray-border/40 text-center">{area}</span>
+        ))}
+      </div>
+      <p class="text-center text-gray-600 mt-8 max-w-3xl mx-auto text-sm">Anchored by landmarks like Union Station, Coors Field, Ball Arena, Empower Field at Mile High, the Colorado Convention Center, the 16th Street Mall, Cherry Creek Shopping Center, McGregor Square, and Denver International Airport (DEN) — plus surrounding suburbs along I-25, I-70, Colfax Avenue, Speer Boulevard, and Federal Boulevard.</p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="font-heading text-4xl text-center tracking-wide text-primary mb-10">Why Denver Businesses Choose Us</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center p-6 border border-gray-border/30 rounded-lg">
+          <h3 class="font-heading text-xl text-primary mb-2">Local, Not a Call Center</h3>
+          <p class="text-gray-600 text-sm">Technicians who actually know that Cherry Creek traffic adds 25 minutes during rush hour, and route around it.</p>
+        </div>
+        <div class="text-center p-6 border border-gray-border/30 rounded-lg">
+          <h3 class="font-heading text-xl text-primary mb-2">Climate-Smart Specs</h3>
+          <p class="text-gray-600 text-sm">UV-rated finishes, hail-resistant panels, weatherstrip rated for Colorado temperature swings.</p>
+        </div>
+        <div class="text-center p-6 border border-gray-border/30 rounded-lg">
+          <h3 class="font-heading text-xl text-primary mb-2">Code-Aware</h3>
+          <p class="text-gray-600 text-sm">Denver Building Code, IBC, NFPA 80, and ADA compliance baked into every install and inspection.</p>
+        </div>
+        <div class="text-center p-6 border border-gray-border/30 rounded-lg">
+          <h3 class="font-heading text-xl text-primary mb-2">Real 24/7 Emergency</h3>
+          <p class="text-gray-600 text-sm">A Saturday night break-in on Larimer Street gets a tech on-site, not a Monday voicemail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-light">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-heading text-4xl text-center tracking-wide text-primary mb-10">Denver Commercial Door FAQs</h2>
+      <div class="space-y-4">
+        {[
+          { q: "Do you offer 24/7 emergency commercial door service in Denver?", a: "Yes. We dispatch emergency commercial door technicians across the Denver metro 24 hours a day, 7 days a week, including weekends and holidays. Whether your storefront in LoDo was hit overnight, a panic device failed at a RiNo restaurant, or a sliding door froze open at a DTC office tower, we respond fast and secure the opening before we leave." },
+          { q: "Which Denver neighborhoods do you serve?", a: "We serve all of Denver and the surrounding metro — including LoDo, RiNo, Capitol Hill, Cherry Creek, Highlands, Sloan's Lake, Five Points, Wash Park, Park Hill, Stapleton/Central Park, the Denver Tech Center, the DIA corridor, Globeville, Glendale, and points along I-25, I-70, and Colfax Avenue." },
+          { q: "How do Denver weather conditions affect commercial doors?", a: "Significantly. UV at altitude breaks down powder-coat and seals faster than at sea level. Hail dents aluminum panels and can shatter storefront glass. Sub-zero overnight lows stiffen weatherstrip and gel hydraulic closers. Dry chinook winds and sudden pressure changes slam unsecured doors and warp frames. We spec hardware and finishes specifically for Front Range conditions." },
+          { q: "Are your installations Denver Building Code and ADA compliant?", a: "Yes. Every install is performed to current Denver Building Code, the International Building Code, NFPA 80 for fire-rated assemblies, and ADA accessibility requirements — including operator force, opening speed, threshold height, and clear-opening width." },
+          { q: "Do you handle annual fire-door inspections?", a: "Yes. NFPA 80 requires annual inspection and documentation of all fire-rated door assemblies. We perform the inspection, generate compliance documentation, and complete corrective repairs in a single visit when possible — common for Denver Public Schools facilities, healthcare buildings, and multi-tenant office towers." },
+          { q: "Can you replace a hail-damaged storefront door?", a: "Yes. Hail-damaged aluminum storefront entries and tempered glass lites are common Denver service calls. We board up the opening immediately if needed, document the damage for your insurance carrier, source matching extrusions, and complete the replacement to factory spec." },
+          { q: "What commercial door brands do you service?", a: "We service all major commercial brands including LCN, Norton, Sargent, Von Duprin, Yale, Schlage, Best, Corbin Russwin, Stanley, Besam/Assa Abloy automatic operators, Horton, Record, and rolling steel from Cornell, Cookson, and Wayne Dalton." }
+        ].map((faq) => (
+          <details class="group bg-white rounded-lg border border-gray-border/30">
+            <summary class="flex items-center justify-between cursor-pointer p-6 font-heading text-lg tracking-wide text-primary">
+              {faq.q}
+              <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600 leading-relaxed">{faq.a}</div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-primary text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-heading text-4xl tracking-wide mb-4">24/7 Emergency Commercial Door Services in Denver</h2>
+      <p class="text-gray-300 leading-relaxed mb-8">From a busted entry on Larimer Square to a failed automatic operator at a DTC tower lobby — call now and a Denver-based technician will be rolling within minutes.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:9547275435" class="bg-accent text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-blue-800 transition-colors">Call Now (954) 727-5435</a>
+        <a href="/contact" class="border-2 border-white text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-white hover:text-primary transition-colors">FREE ESTIMATE</a>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Commercial Door Services — Denver",
+    "image": "https://commercial-door-services.com/images/logo.png",
+    "url": "https://commercial-door-services.com/location/commercial-door-services-denver",
+    "telephone": "+1-954-727-5435",
+    "priceRange": "$$",
+    "address": { "@type": "PostalAddress", "addressLocality": "Denver", "addressRegion": "CO", "addressCountry": "US" },
+    "areaServed": [
+      { "@type": "City", "name": "Denver" },
+      { "@type": "AdministrativeArea", "name": "Denver County, CO" }
+    ],
+    "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" }
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Do you offer 24/7 emergency commercial door service in Denver?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We dispatch emergency commercial door technicians across the Denver metro 24 hours a day, 7 days a week, including weekends and holidays. Whether your storefront in LoDo was hit overnight, a panic device failed at a RiNo restaurant, or a sliding door froze open at a DTC office tower, we respond fast and secure the opening before we leave." } },
+      { "@type": "Question", "name": "Which Denver neighborhoods do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve all of Denver and the surrounding metro — including LoDo, RiNo, Capitol Hill, Cherry Creek, Highlands, Sloan's Lake, Five Points, Wash Park, Park Hill, Stapleton/Central Park, the Denver Tech Center, the DIA corridor, Globeville, Glendale, and points along I-25, I-70, and Colfax Avenue." } },
+      { "@type": "Question", "name": "How do Denver weather conditions affect commercial doors?", "acceptedAnswer": { "@type": "Answer", "text": "Significantly. UV at altitude breaks down powder-coat and seals faster than at sea level. Hail dents aluminum panels and can shatter storefront glass. Sub-zero overnight lows stiffen weatherstrip and gel hydraulic closers. Dry chinook winds and sudden pressure changes slam unsecured doors and warp frames. We spec hardware and finishes specifically for Front Range conditions." } },
+      { "@type": "Question", "name": "Are your installations Denver Building Code and ADA compliant?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every install is performed to current Denver Building Code, the International Building Code, NFPA 80 for fire-rated assemblies, and ADA accessibility requirements — including operator force, opening speed, threshold height, and clear-opening width." } },
+      { "@type": "Question", "name": "Do you handle annual fire-door inspections?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. NFPA 80 requires annual inspection and documentation of all fire-rated door assemblies. We perform the inspection, generate compliance documentation, and complete corrective repairs in a single visit when possible — common for Denver Public Schools facilities, healthcare buildings, and multi-tenant office towers." } },
+      { "@type": "Question", "name": "Can you replace a hail-damaged storefront door?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Hail-damaged aluminum storefront entries and tempered glass lites are common Denver service calls. We board up the opening immediately if needed, document the damage for your insurance carrier, source matching extrusions, and complete the replacement to factory spec." } },
+      { "@type": "Question", "name": "What commercial door brands do you service?", "acceptedAnswer": { "@type": "Answer", "text": "We service all major commercial brands including LCN, Norton, Sargent, Von Duprin, Yale, Schlage, Best, Corbin Russwin, Stanley, Besam/Assa Abloy automatic operators, Horton, Record, and rolling steel from Cornell, Cookson, and Wayne Dalton." } }
+    ]
+  })} />
+</Layout>

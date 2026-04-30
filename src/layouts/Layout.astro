@@ -9,7 +9,7 @@ interface Props {
   keywords?: string;
 }
 
-const { title, description = "Commercial Door Services — expert commercial door installation, repair & maintenance in Orlando & Miami, FL. 24/7 emergency service. Call (954) 727-5435.", keywords = "commercial door services, commercial door installation, commercial door repair, automatic doors, security doors, fire-rated doors, Orlando, Miami, FL, commercial door maintenance" } = Astro.props;
+const { title, description = "Commercial Door Services — expert commercial door installation, repair & maintenance in Orlando & Miami, FL, and Denver, CO. 24/7 emergency service. Call (954) 727-5435.", keywords = "commercial door services, commercial door installation, commercial door repair, automatic doors, security doors, fire-rated doors, Orlando, Miami, FL, Denver, CO, commercial door maintenance" } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const breadcrumbItems = [{ name: "Home", url: "https://commercial-door-services.com/" }];
@@ -52,7 +52,7 @@ for (const segment of pathSegments) {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Commercial Door Services",
-      "description": "Expert commercial door installation, repair, and maintenance services in Orlando and Miami, FL. Automatic doors, security doors, and fire-rated doors.",
+      "description": "Expert commercial door installation, repair, and maintenance services in Orlando and Miami, FL, and Denver, CO. Automatic doors, security doors, and fire-rated doors.",
       "url": "https://commercial-door-services.com",
       "telephone": "+1-954-727-5435",
       "image": "https://commercial-door-services.com/images/logo.png",
@@ -65,7 +65,8 @@ for (const segment of pathSegments) {
       },
       "areaServed": [
         { "@type": "City", "name": "Orlando" },
-        { "@type": "City", "name": "Miami" }
+        { "@type": "City", "name": "Miami" },
+        { "@type": "City", "name": "Denver" }
       ],
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
@@ -97,7 +98,8 @@ for (const segment of pathSegments) {
       },
       "areaServed": [
         { "@type": "City", "name": "Orlando" },
-        { "@type": "City", "name": "Miami" }
+        { "@type": "City", "name": "Miami" },
+        { "@type": "City", "name": "Denver" }
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",

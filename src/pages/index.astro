@@ -4,8 +4,8 @@ import services from '../data/services.json';
 ---
 
 <Layout
-  title="Commercial Door Services Orlando & Miami | Installation & Repair"
-  description="Commercial Door Services — expert commercial door installation, repair & maintenance in Orlando & Miami, FL. 24/7 emergency service. Call (954) 727-5435."
+  title="Commercial Door Services Orlando, Miami & Denver | Installation & Repair"
+  description="Commercial Door Services — expert commercial door installation, repair & maintenance in Orlando & Miami, FL, and Denver, CO. 24/7 emergency service. Call (954) 727-5435."
 >
 
   <!-- Hero -->
@@ -14,8 +14,8 @@ import services from '../data/services.json';
     <div class="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/70"></div>
     <div class="relative max-w-7xl mx-auto px-4">
       <div class="max-w-2xl">
-        <h1 class="font-heading text-5xl md:text-7xl tracking-wide mb-4">Commercial Door Services in Orlando & Miami</h1>
-        <p class="text-xl md:text-2xl font-light mb-4 text-gray-200">Serving Orlando & Miami, FL</p>
+        <h1 class="font-heading text-5xl md:text-7xl tracking-wide mb-4">Commercial Door Services in Orlando, Miami & Denver</h1>
+        <p class="text-xl md:text-2xl font-light mb-4 text-gray-200">Serving Orlando & Miami, FL · Denver, CO</p>
         <p class="text-base md:text-lg text-gray-300 mb-8">
           Expert commercial door installation, repair, and maintenance tailored to your business needs. We specialize in automatic doors, security doors, and fire-rated doors.
         </p>
@@ -88,7 +88,7 @@ import services from '../data/services.json';
       <div>
         <h2 class="font-heading text-4xl md:text-5xl tracking-wide text-primary mb-4">Professional Commercial Door Solutions</h2>
         <p class="text-gray-600 leading-relaxed mb-6">
-          We provide comprehensive solutions for <a href="/contact" class="text-accent hover:underline">installation, maintenance, and repair</a> of automatic doors, security doors, and fire-rated doors, with emphasis on security enhancement and customized solutions for businesses in Orlando and Miami.
+          We provide comprehensive solutions for <a href="/contact" class="text-accent hover:underline">installation, maintenance, and repair</a> of automatic doors, security doors, and fire-rated doors, with emphasis on security enhancement and customized solutions for businesses in Orlando, Miami, and Denver.
         </p>
         <div class="flex flex-col sm:flex-row gap-3">
           <a href="/about-us" class="inline-flex bg-primary text-white font-heading text-lg tracking-wide px-6 py-3 rounded hover:bg-dark transition-colors">LEARN MORE ABOUT US</a>
@@ -133,7 +133,7 @@ import services from '../data/services.json';
     <div class="relative max-w-4xl mx-auto px-4">
       <h2 class="font-heading text-4xl md:text-5xl tracking-wide mb-4">24/7 Commercial Door Emergency Services</h2>
       <p class="text-gray-300 leading-relaxed mb-8">
-        We provide comprehensive emergency commercial door solutions to ensure your business remains secure and operational around the clock in Orlando and Miami.
+        We provide comprehensive emergency commercial door solutions to ensure your business remains secure and operational around the clock in Orlando, Miami, and Denver.
       </p>
       <a href="tel:9547275435" class="inline-flex bg-accent text-white font-heading text-xl tracking-wide px-8 py-4 rounded hover:bg-blue-800 transition-colors">Call Now (954) 727-5435</a>
     </div>
@@ -147,7 +147,7 @@ import services from '../data/services.json';
         {services.map((s) => (
           <a href={`/service/${s.slug}`} class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-border/30 block">
             <div class="aspect-[4/3] overflow-hidden">
-              <img src={s.image} alt={`${s.name} service in Orlando & Miami`} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+              <img src={s.image} alt={`${s.name} service in Orlando, Miami & Denver`} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
             </div>
             <div class="p-5">
               <h3 class="font-heading text-2xl tracking-wide text-primary mb-2">{s.name}</h3>
@@ -171,7 +171,7 @@ import services from '../data/services.json';
         {[
           { name: "Marcus P.", location: "Orlando, FL", quote: "Commercial Door Services installed new automatic doors for our retail store. Fast, professional, and the doors work perfectly. Highly recommend!" },
           { name: "Diana S.", location: "Miami, FL", quote: "Called for an emergency lock repair on our office building. They arrived within the hour and had everything fixed. Excellent 24/7 service." },
-          { name: "Tom H.", location: "Orlando, FL", quote: "Great experience with their fire-rated door installation. The team was knowledgeable, pricing was transparent, and the work was top quality." },
+          { name: "Ryan K.", location: "Denver, CO", quote: "Replaced our storefront entry doors at our Denver warehouse. On-time, clean install, and the access control upgrade has been bulletproof." },
         ].map((t) => (
           <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-border/30">
             <div class="flex items-center gap-1 mb-3">
@@ -198,7 +198,7 @@ import services from '../data/services.json';
     "review": [
       { "@type": "Review", "author": { "@type": "Person", "name": "Marcus P." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Commercial Door Services installed new automatic doors for our retail store. Fast, professional, and the doors work perfectly. Highly recommend!" },
       { "@type": "Review", "author": { "@type": "Person", "name": "Diana S." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Called for an emergency lock repair on our office building. They arrived within the hour and had everything fixed. Excellent 24/7 service." },
-      { "@type": "Review", "author": { "@type": "Person", "name": "Tom H." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Great experience with their fire-rated door installation. The team was knowledgeable, pricing was transparent, and the work was top quality." }
+      { "@type": "Review", "author": { "@type": "Person", "name": "Ryan K." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Replaced our storefront entry doors at our Denver warehouse. On-time, clean install, and the access control upgrade has been bulletproof." }
     ]
   })} />
 
@@ -214,7 +214,7 @@ import services from '../data/services.json';
           },
           {
             q: "Do you offer 24/7 emergency commercial door service?",
-            a: "Yes, we provide 24/7 emergency commercial door services across Orlando and Miami. Whether your door is stuck, a lock is broken, or there is a security concern, our technicians are available around the clock to respond quickly and get your business back on track."
+            a: "Yes, we provide 24/7 emergency commercial door services across Orlando, Miami, and Denver. Whether your door is stuck, a lock is broken, or there is a security concern, our technicians are available around the clock to respond quickly and get your business back on track."
           },
           {
             q: "What types of commercial doors do you service?",
@@ -225,8 +225,8 @@ import services from '../data/services.json';
             a: "We recommend having your commercial doors professionally inspected at least twice a year. Regular inspections help identify wear and tear early, prevent costly emergency repairs, and ensure compliance with fire and safety codes. High-traffic doors may benefit from quarterly inspections."
           },
           {
-            q: "Do you serve both Orlando and Miami?",
-            a: "Yes, Commercial Door Services proudly serves both Orlando and Miami, as well as surrounding areas throughout Central and South Florida. Our teams are based locally in each region to ensure fast response times for both scheduled appointments and emergency calls."
+            q: "Which areas do you serve?",
+            a: "Commercial Door Services proudly serves Orlando and Miami, FL, and Denver, CO, as well as surrounding areas. Our teams are based locally in each region to ensure fast response times for both scheduled appointments and emergency calls."
           }
         ].map((faq) => (
           <details class="group bg-gray-light rounded-lg">
@@ -253,7 +253,7 @@ import services from '../data/services.json';
       {
         "@type": "Question",
         "name": "Do you offer 24/7 emergency commercial door service?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide 24/7 emergency commercial door services across Orlando and Miami. Whether your door is stuck, a lock is broken, or there is a security concern, our technicians are available around the clock to respond quickly and get your business back on track." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide 24/7 emergency commercial door services across Orlando, Miami, and Denver. Whether your door is stuck, a lock is broken, or there is a security concern, our technicians are available around the clock to respond quickly and get your business back on track." }
       },
       {
         "@type": "Question",
@@ -267,8 +267,8 @@ import services from '../data/services.json';
       },
       {
         "@type": "Question",
-        "name": "Do you serve both Orlando and Miami?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes, Commercial Door Services proudly serves both Orlando and Miami, as well as surrounding areas throughout Central and South Florida. Our teams are based locally in each region to ensure fast response times for both scheduled appointments and emergency calls." }
+        "name": "Which areas do you serve?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Commercial Door Services proudly serves Orlando and Miami, FL, and Denver, CO, as well as surrounding areas. Our teams are based locally in each region to ensure fast response times for both scheduled appointments and emergency calls." }
       }
     ]
   })} />
